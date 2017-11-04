@@ -15,13 +15,26 @@ This pilight bridge is tested to work with pilight 7.0. First a configuration of
 
 Then add your devices (RF switches etc.) to the device section of the config file ([more info](http://manual.pilight.org/configuration/devices.html)). pilight will send configuration updates via its API for these devices.
 
-## Setup
+## Install via npm
 
-Todo
+In the terminal open the user data directory ˜/.node-red and install the package
+
+```
+cd ˜/.node-red
+npm install node-red-contrib-pilight
+```
+
+Then run or restart Node-RED
+
+```
+node-red
+```
+
+Open your Node-RED instance, typically under http://localhost:1880, and you should see the new nodes available in the palette.
 
 ## Usage
 
-Right now there is one node: `pilight-receive`, which can be found in the input section of the palette in Node-RED. Its purpose it to receive configuration updates for devices defined in pilight. Every time a device changes its state (i.e. a switch was turned off) the pilight-receive node will receive an event for that.
+Right now there is one node: `pilight-receive`. Its purpose it to receive configuration updates for devices defined in pilight. Every time a device changes its state (i.e. a switch was turned off) the pilight-receive node will receive an event for that.
 
 If you want to use one or more `pilight-receive` nodes, just drag the node from the palette. The first thing to do is to define the host and port of pilight. Just double click on the node and add a new pilight daemon as shown below.
 
