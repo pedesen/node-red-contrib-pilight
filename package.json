@@ -6,6 +6,7 @@
   "author": "Patrick Dehn",
   "license": "MIT",
   "keywords": [
+    "node-red",
     "pilight",
     "home automation"
   ],
