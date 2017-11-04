@@ -25,7 +25,9 @@ Right now there is one node: `pilight-receive`, which can be found in the input 
 
 If you want to use one or more `pilight-receive` nodes, just drag the node from the palette. The first thing to do is to define the host and port of pilight. Just double click on the node and add a new pilight daemon as shown below.
 
+![Add pilight daemon](docs/pilight-daemon-1.png)
 
+![Configure pilight daemon](docs/pilight-daemon-2.png)
 
 After you deployed your flow, you should be connected to the pilight-daemon. You can check the logs in a terminal and should see something like `[pilight-receive:xxxxxxx.xxxxx] socket connection: success`.
 
