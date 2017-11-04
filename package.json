@@ -1,0 +1,22 @@
+{
+  "name": "node-red-contrib-pilight",
+  "version": "0.0.1",
+  "description": "Pilight bridge for Node-RED",
+  "main": "index.js",
+  "author": "Patrick Dehn",
+  "license": "MIT",
+  "keywords": [
+    "pilight",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedesen/node-red-contrib-pilight.git"
+  },
+  "node-red": {
+    "nodes": {
+      "pilight-daemon": "pilight-daemon.js",
+      "pilight-receive": "pilight-receive.js"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('pilight-receive',{
+        category: 'input',
+        color: '#FFCC66',
+        defaults: {
+            name: {value:""},
+            server: {type:"pilight-daemon", required:true}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "bridge.png",
+        label: function() {
+            return this.name||"pilight-receive";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="pilight-receive">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name" />
+    </div>
+    <div class="form-row">
+        <label for="node-input-server"><i class="icon-tag"></i> Daemon</label>
+        <input type="text" id="node-input-server" placeholder="Daemon" />
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="pilight-receive">
+    <p>Receive Pilight messages</p>
+</script>
